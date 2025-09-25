@@ -3,6 +3,13 @@ package scu.edu.csen160.lab1.test.exercise3;
 public class PatternMaker {
     public static void drawOneLine(char symbol, int noOfTimes, int
             offset){
+        for  (int i = 0; i < offset; i++) {
+            System.out.print(' ');
+        }
+        for(int j = 0; j < noOfTimes; j++) {
+            System.out.print(symbol);
+        }
+        System.out.println();
         // Write Java code to draw the symbol for the noOfTimes
         // after drawing a number of blankspaces (offset) .
         // For example, if the symbol is "*", noOfTimes is 10
@@ -16,6 +23,9 @@ public class PatternMaker {
         // the noOfTimes.
     }
     public static void drawPattern() {
+        drawOneLine('*', 4, 4);
+        drawOneLine('*', 8, 8);
+        drawOneLine('*', 12, 12);
         // This method should draw the following pattern:
         // 1. line, should have 4 blank spaces followed by 4 stars.
         // 2. line will have 8 blank spaces followed by 8 stars.

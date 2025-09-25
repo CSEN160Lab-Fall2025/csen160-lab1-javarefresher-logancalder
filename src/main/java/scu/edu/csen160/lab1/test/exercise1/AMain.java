@@ -7,6 +7,9 @@ public class AMain {
         Puppy myPuppy = new Puppy("Fido",2);
         myPuppy.getName();
 
+        System.out.println("Age: " + myPuppy.getAge());
+        System.out.println("Days: " + myPuppy.getAge() * 365);
+
         System.out.printf("Hello and welcome!");
     }
 }

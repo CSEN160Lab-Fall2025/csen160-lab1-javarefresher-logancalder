@@ -14,6 +14,10 @@ public class Puppy {
         this.age = age;
     }
 
+    public int getAge(){
+        return age;
+    }
+
     public String getName() {
         return this.name;
     }
